@@ -170,19 +170,25 @@ def max_num_abs(a, b):
     <class 'int'>
     '''
 
-    if a<0 and b<0 and a<b:
-        return a
+    if a=0:
+        return b
     else:
-        if a<0 and b>0 and -a>b:
+        if b=0:
             return a
-        else: 
-            if a>0 and b>0 and a>b:
+        else:
+            if a<0 and b<0 and a<=b:
                 return a
             else:
-                if a>0 and b<0 and a>(-b):
+                if a<0 and b>0 and -a>b:
                     return a
-                else:
-                    return b
+                else: 
+                    if a>0 and b>0 and a>b:
+                        return a
+                    else:
+                        if a>0 and b<0 and a>(-b):
+                            return a
+                        else:
+                            return b
 
 
 
@@ -607,7 +613,7 @@ def median(a, b, c):
     -2
     '''
 
-    if a<=b<=c or c<=b<=c:
+    if a<=b<=c or c<=b<=a:
         return b
     if b<=a<=c or c<=a<=b:
         return a
