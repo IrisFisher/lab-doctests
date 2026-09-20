@@ -170,10 +170,10 @@ def max_num_abs(a, b):
     <class 'int'>
     '''
 
-    if a=0:
+    if a==0:
         return b
     else:
-        if b=0:
+        if b==0:
             return a
         else:
             if a<0 and b<0 and a<=b:
